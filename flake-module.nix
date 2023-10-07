@@ -25,6 +25,7 @@ in
           # checks = lib.mkIf config.treefmt.flakeCheck { treefmt = config.treefmt.build.check config.treefmt.projectRoot; };
           # formatter = lib.mkIf config.treefmt.flakeFormatter (lib.mkDefault config.treefmt.build.wrapper);
           # templates = config.template-utils.settings.templates;
+          packages.default = pkgs.hello;
         };
       });
   };
