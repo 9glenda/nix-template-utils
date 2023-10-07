@@ -37,5 +37,7 @@ in
     # devShell = pkgs.mkShell {
     #   nativeBuildInputs = [ config.build.wrapper ] ++ (lib.attrValues config.build.programs);
     # };
+    packages.default = pkgs.hello;
+    
   };
 }
