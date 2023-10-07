@@ -26,11 +26,11 @@ in
           # formatter = lib.mkIf config.treefmt.flakeFormatter (lib.mkDefault config.treefmt.build.wrapper);
           # templates = config.template-utils.settings.templates;
           packages.default = pkgs.hello;
-          templates = {
-            default = {
-              path = ./templates/rust;
-            };
-          };
+          # templates = {
+          #   default = {
+          #     path = "./templates/rust";
+          #   };
+          # };
         };
       });
   };

@@ -25,6 +25,7 @@ let
       default = { };
       description = "Declare templates.";
     };
+    build = mkOption { };
   };
 
   # configFormat = pkgs.formats.toml { };
@@ -37,7 +38,7 @@ in
     # devShell = pkgs.mkShell {
     #   nativeBuildInputs = [ config.build.wrapper ] ++ (lib.attrValues config.build.programs);
     # };
-    packages.default = pkgs.hello;
+    # packages.default = pkgs.hello;
     
   };
 }
