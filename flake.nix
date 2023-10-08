@@ -1,7 +1,7 @@
 {
   description = "Nix template utilits";
   inputs = {
-    nixpkgs = "github:NixOS/nixpkgs/unstable";
+    # nixpkgs.url = "nixpkgs/nixos-unstable";
   };
 
   outputs = { self }: {
